@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ ul,li{
+    list-style: none;
+ }
+
+ a{
+    display: inline-block;
+    text-decoration: none;
+ }
+
+ .box{
+   display: flex;
+ }
+
+ .container{
+    width: 1170px;
+    margin: 0 auto;
+ }
+
+ .common-button{
+   width: 191px;
+   height: 70px;
+   background: #E5745D;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .common-button a{
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+ }
+
+ .common-button a::after{
+    width: 180px;
+    height: 60px;
+    content: "";
+    border: 1px solid #fff;
+    position: absolute;
+    top: -16px;
+    left: -45px;
+ }
+
+ .common-title h4{
+    font-family: "Vollkorn", serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #E5745D;
+    text-align: center;
+    position: relative;
+ }
+
+ .common-title h4::after {
+   width: 40px;
+   height: 1px;
+   background: #E5745D;
+   content: "";
+   position: absolute;
+   top: 9px;
+   left: 456px;
+}
+
+.common-title h4::before {
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   background: #E5745D;
+   content: "";
+   position: absolute;
+   top: 6px;
+   left: 496px;
+}
+
+ .common-title h2{
+   font-family: "Vollkorn", serif;
+   font-size: 50px;
+   font-weight: 500;
+   color: #00413D;
+   width: 517px;
+   margin: 0 auto;
+   text-align: center;
+   padding: 11px 0 40px;
+}
+
+ /* =================================
+        Navbar Part Start
+ ================================= */
+ .navbar{
+    padding: 18px 0;
+ }
+
+ .navbar .navbar-nav{
+    column-gap: 50px;
+ }
+ 
+ .nav-button a{
+    background: #E5745D;
+    padding: 25px 44px;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+ }
+
+ .nav-button a::after{
+    width: 185px;
+    height: 65px;
+    content: "";
+    border: 1px solid #fff;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+ }
+
+ .navbar .nav-link{
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #00413D;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+ }
+
+ .navbar .nav-link:hover{
+    color: #E5745D;
+ }
+ /* =================================
+        Banner Part Start
+ ================================= */
+ .banner{
+    width: 100%;
+    background: #00413D;
+    padding: 220px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+ }
+
+ .banner .banner-img{
+   width: 60%;
+   height: 100%;
+   background: url(../images/banner.png) no-repeat left;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -3;
+ }
+
+ .banner .banner-img .overlay{
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 65, 61, .8);
+ }
+
+ .banner .overlay2{
+   width: 40%;
+   height: 100%;
+   background: url(../images/banner2.jpg) no-repeat top;
+   background-size: cover;
+   position: absolute;
+   top: 0;
+   right: -40%;
+   transition: .7s;
+   z-index: -1;
+ }
+
+ .banner:hover .overlay2{
+   right: 0;
+ }
+
+ .banner h1{
+    font-family: "Vollkorn", serif;
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 110px;
+ }
+
+ .banner h1 span{
+    display: block;
+ }
+
+ .banner p{
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    width: 670px;
+    padding: 14px 0 50px;
+ }
+
+ .banner p span{
+    color: #fff;
+    font-weight: 500;
+ }
+ /* =================================
+        Banner Part End
+ ================================= */
+
+/* =================================
+        Service Part Start
+ ================================= */
+ .service{
+   padding: 220px 0 120px;
+ }
+
+ .service .card{
+   width: 100% !important;
+   border: 0;
+   -webkit-box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
+   -moz-box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
+   box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
+   padding: 50px 0 50px 35px;
+ }
+
+ .service .card img{
+   width: 20%;
+ }
+
+ .service .card .card-body{
+   padding: 0;
+ }
+
+ .service .card-body .card-title{
+    font-family: "Vollkorn", serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #00413D;
+    padding: 26px 0 15px;
+ }
+
+ .service .card-body .card-text{
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00413D;
+    width: 245px;
+ }
+
+ .service .card-body i{
+   font-size: 28px;
+   color: #00413D;
+ }
+ /* =================================
+        Service Part End
+ ================================= */
+
+ /* =================================
+        About Part Start
+ ================================= */
+ .about .box{
+   column-gap: 30px;
+ }
+
+ .about .twoimage{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+
+ .about .common-title h2{
+   text-align: left;
+   width: auto;
+   padding: 11px 0 5px;
+ }
+
+ .about .common-title{
+   padding-top: 29px;
+ }
+
+ .about .common-title h4{
+   text-align: left;
+   margin-left: 60px;
+ }
+
+ .about .common-title h4::after {
+   left: -57px;
+ }
+
+ .about .common-title h4::before {
+   left: -17px;
+ }
+
+ .about .text{
+   padding-bottom: 30px;
+ }
+
+ .about p{
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00413D;
+ }
+ /* =================================
+        About Part End
+ ================================= */
+ /* =================================
+        Progress Part Start
+ ================================= */
+ .progressber{
+   padding: 80px 0 120px;
+ }
+
+.progressber .main-box{
+   width: 270px;
+   height: 282px;
+   -webkit-box-shadow: 0px 0px 15px 1px rgba(232,229,232,1);
+   -moz-box-shadow: 0px 0px 15px 1px rgba(232,229,232,1);
+   box-shadow: 0px 0px 15px 1px rgba(232,229,232,1);
+ }
+ /* =================================
+        Progress Part End
+ ================================= */
