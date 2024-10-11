@@ -448,6 +448,10 @@
    box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
  }
 
+ .project .card .card-body{
+  padding: 25px 30px 30px;
+ }
+
  .project .card-title{
    font-family: "Vollkorn", serif;
    font-size: 16px;
@@ -462,21 +466,22 @@
    color: #00413D;
    width: 304px;
    margin-bottom: 5px !important;
+   line-height: 30px;
  }
 
  .project .card-text2{
    font-family: "Jost", sans-serif;
    font-size: 16px;
    font-weight: 400;
-   color: #00413D;
+   color: #4D7A77;
    width: 289px;
+   padding: 8px 0;
  }
 
  .project .card-box{
    display: flex;
    column-gap: 10px;
    align-items: center;
-   padding: 10px 0;
  }
 
  .project .card-box a{
@@ -780,4 +785,94 @@
 }
  /* =================================
         Contact Part End
+ ================================= */
+ /* =================================
+        Blog Part Start
+ ================================= */
+ .blog h2{
+  padding: 0;
+ }
+
+ .blog .card .card-body{
+  padding: 25px 30px 30px;
+ }
+ 
+ .blog .card{
+  margin: 40px 0 60px;
+  border: 0px;
+  width: 100% !important;
+  -webkit-box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
+  -moz-box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
+  box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
+  border-radius: 0 !important;
+}
+
+.blog .card .card-img-top{
+  border-radius: 0;
+}
+
+.blog .box{
+  justify-content: space-between;
+}
+
+.blog .card-title{
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #E5745D;
+}
+
+.blog .box p{
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4D7A77;
+}
+
+.blog .card-text{
+  font-family: "Vollkorn", serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #00413D;
+  width: 304px;
+  line-height: 30px;
+  margin-bottom: 5px !important;
+}
+
+.blog .card-text2{
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4D7A77;
+  width: 289px;
+}
+
+.blog .card-box{
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.blog .card-box a{
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #00413D;
+  transition: .5s;
+}
+
+.blog .card-box i{
+  color: #00413D;
+  transition: .5s;
+}
+
+.blog .card:hover .card-box i{
+  color: #E5745D;
+}
+
+.blog .card:hover .card-box a{
+  color: #E5745D;
+}
+ /* =================================
+        Blog Part End
  ================================= */
