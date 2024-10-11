@@ -1,9 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
  ul,li{
     list-style: none;
+    margin: 0;
+    padding: 0;
  }
 
  a{
@@ -20,14 +18,14 @@
     margin: 0 auto;
  }
 
- .common-button{
+ /* .common-button{
    width: 191px;
    height: 70px;
    background: #E5745D;
    display: flex;
    justify-content: center;
    align-items: center;
- }
+ } */
 
  .common-button a{
     font-family: "Jost", sans-serif;
@@ -35,16 +33,18 @@
     font-weight: 500;
     color: #fff;
     position: relative;
+    background: #E5745D;
+    padding: 20px 40px;
  }
 
  .common-button a::after{
-    width: 180px;
-    height: 60px;
+    width: 96%;
+    height: 61px;
     content: "";
     border: 1px solid #fff;
     position: absolute;
-    top: -16px;
-    left: -45px;
+    top: 3px;
+    left: 3px;
  }
 
  .common-title h4{
@@ -209,6 +209,13 @@
  ================================= */
  .service{
    padding: 220px 0 120px;
+   position: relative;
+ }
+
+ .service .dotimg{
+   position: absolute;
+   top: 350px;
+   left: 50px;
  }
 
  .service .card{
@@ -255,8 +262,18 @@
  /* =================================
         About Part Start
  ================================= */
+ .about{
+   position: relative;
+ }
+ 
  .about .box{
    column-gap: 30px;
+ }
+
+ .about .img{
+   position: absolute;
+   top: -50px;
+   right: 50px;
  }
 
  .about .twoimage{
@@ -298,6 +315,10 @@
     font-weight: 400;
     color: #00413D;
  }
+
+ .about .common-button a::after{
+   left: 4px;
+ }
  /* =================================
         About Part End
  ================================= */
@@ -309,12 +330,454 @@
  }
 
 .progressber .main-box{
-   width: 270px;
+   width: 100%;
    height: 282px;
    -webkit-box-shadow: 0px 0px 15px 1px rgba(232,229,232,1);
    -moz-box-shadow: 0px 0px 15px 1px rgba(232,229,232,1);
    box-shadow: 0px 0px 15px 1px rgba(232,229,232,1);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   row-gap: 24px;
  }
+
+ .progressber .main-box .circle{
+   width: 167px;
+   height: 167px;
+   border: 10px solid #E5745D;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .progressber .main-box h3{
+    font-family: "Vollkorn", serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #00413D;
+ }
+
+ .progressber .main-box h4{
+   font-family: "Vollkorn", serif;
+   font-size: 34px;
+   font-weight: 600;
+   color: #E5745D;
+}
  /* =================================
         Progress Part End
+ ================================= */
+
+ /* =================================
+        Project Part Start
+ ================================= */
+ .project{
+   position: relative;
+ }
+
+ .project .plus{
+   position: absolute;
+   top: 230px;
+   right: 5px;
+ }
+
+ .project .minuses{
+   position: absolute;
+   bottom: 60px;
+   left: 5px;
+ }
+ 
+ .project .common-title h2{
+   text-align: left;
+   width: auto;
+   padding: 11px 0 5px;
+ }
+
+ .project .common-title{
+   padding-top: 29px;
+ }
+
+ .project .common-title h4{
+   text-align: left;
+   margin-left: 60px;
+ }
+
+ .project .common-title h4::after {
+   left: -57px;
+ }
+
+ .project .common-title h4::before {
+   left: -17px;
+ }
+
+ .project .box{
+   justify-content: space-between;
+ }
+
+ .project .icon ul{
+   display: flex;
+   column-gap: 20px;
+ }
+
+ .project .icon ul li{
+   width: 44px;
+   height: 44px;
+   background: #FFF;
+   border: 1px solid rgba(0, 65, 61, .1);
+   color: #00413D;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 65px;
+   transition: .5s;
+ }
+
+ .project .icon ul li:hover{
+   background: #E5745D;
+   color: #fff;
+   border: transparent;
+ }
+
+ .project .card{
+   margin: 40px 0 60px;
+   border: 0px;
+   width: 100% !important;
+   -webkit-box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
+   -moz-box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
+   box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
+ }
+
+ .project .card-title{
+   font-family: "Vollkorn", serif;
+   font-size: 16px;
+   font-weight: 600;
+   color: #E5745D;
+ }
+
+ .project .card-text{
+   font-family: "Vollkorn", serif;
+   font-size: 24px;
+   font-weight: 500;
+   color: #00413D;
+   width: 304px;
+   margin-bottom: 5px !important;
+ }
+
+ .project .card-text2{
+   font-family: "Jost", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   color: #00413D;
+   width: 289px;
+ }
+
+ .project .card-box{
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+   padding: 10px 0;
+ }
+
+ .project .card-box a{
+   font-family: "Jost", sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+   color: #00413D;
+   transition: .5s;
+ }
+
+ .project .card-box i{
+   color: #00413D;
+   transition: .5s;
+ }
+
+ .project .card:hover .card-box i{
+   color: #E5745D;
+ }
+
+ .project .card:hover .card-box a{
+   color: #E5745D;
+ }
+
+ .project .button{
+   display: flex;
+   justify-content: center;
+ }
+
+ .project .common-button a::after{
+   left: 4px;
+ }
+ /* =================================
+        Project Part End
+ ================================= */
+ /* =================================
+        Protfolio Part Start
+ ================================= */
+ .protfolio{
+   margin-top: 235px;
+   padding-bottom: 16px;
+   position: relative;
+ }
+
+ .protfolio .leftimg {
+  position: absolute;
+  top: 400px;
+  left: 5px;
+ }
+
+ .protfolio .rightimg {
+  position: absolute;
+  bottom: 70px;
+  right: 5px;
+ }
+
+ .protfolio h2{
+   padding-bottom: 24px;
+ }
+
+ .protfolio ul{
+   display: flex;
+   column-gap: 30px;
+   justify-content: center;
+   font-family: "Vollkorn", serif;
+   font-size: 16px;
+   font-weight: 400;
+   color: #00413D;
+   padding-bottom: 40px;
+ }
+
+ .protfolio ul li{
+   position: relative;
+ }
+
+ .protfolio ul li::after{
+   width: 0;
+   height: 2px;
+   background: #E5745D;
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transition: .7s;
+ }
+
+ .protfolio ul li:hover::after{
+   width: 100%;
+ }
+
+ .protfolio .card{
+   width: 100% !important;
+   padding-top: 420px;
+   background: #C4C4C4;
+   border: 0;
+   border-radius: 0;
+   position: relative;
+   transition: .7s;
+ }
+
+ .protfolio .card:hover{
+   background: #4E7573;
+ }
+
+ .protfolio .card .badge{
+   width: 70px;
+   height: 70px;
+   background: #fff;
+   color: #E5745D;
+   border-radius: 50%;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   opacity: 0;
+   transition: .7s;
+ }
+
+ .protfolio .card:hover .badge{
+   opacity: 1;
+ }
+
+ .protfolio .card .card-body{
+   background: #00413D;
+   padding: 22px 18px !important;
+ }
+
+ .protfolio .card .card-body .card-title{
+   font-family: "Vollkorn", serif;
+   font-size: 24px;
+   font-weight: 600;
+   color: #FFF;
+   margin-bottom: 0 !important;
+ }
+
+ .protfolio .card .card-body .card-text{
+   font-family: "Jost", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   color: #FFF;
+ }
+ /* =================================
+        Protfolio Part End
+ ================================= */
+ /* =================================
+        Testimonial Part Start
+ ================================= */
+ .testimonial{
+  padding: 121px 0 73px;
+  background: #F9F4F1;
+ }
+
+ .testimonial h4{
+  padding-left: 50px;
+}
+
+.testimonial .item{
+  width: 100%;
+  background: #fff;
+  border-top: 7px solid #E5745D;
+  padding: 30px 40px;
+  -webkit-box-shadow: 3px 4px 16px -7px rgba(235,151,134,1);
+  -moz-box-shadow: 3px 4px 16px -7px rgba(235,151,134,1);
+  box-shadow: 3px 4px 16px -7px rgba(235,151,134,1);
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial .item p{
+   font-family: "Jost", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   color: #00413D;
+   width: 476px;
+}
+
+.testimonial .item .triangle{
+  position: absolute;
+  bottom: -32px;
+  left: 35px;
+  /* background: #000; */
+  z-index: 1;
+}
+
+.testimonial .box{
+  padding: 30px 60px 97px;
+  column-gap: 30px;
+  align-items: center;
+  line-height: 1px;
+}
+
+.testimonial h3{
+  font-family: "Vollkorn", serif;
+   font-size: 20px;
+   font-weight: 600;
+   color: #00413D;
+}
+
+.testimonial .ptag{
+  font-family: "Jost", sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   color: #00413D;
+}
+
+.testimonial .box ul{
+  display: flex;
+  column-gap: 3px;
+  color: #FF9F3F;
+  font-size: 10px;
+}
+
+.testimonial .dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.testimonial .dot{
+  height: 8px;
+  width: 8px;
+  background: #D9D9D9;
+  border-radius: 50%;
+}
+
+.testimonial .dot2{
+  height: 11px;
+  width: 11px;
+  background: #E5745D;
+  border-radius: 50%;
+}
+ /* =================================
+        Testimonial Part End
+ ================================= */
+ /* =================================
+        Contact Part Start
+ ================================= */
+.contact{
+  padding: 113px 0 127px;
+}
+
+.contact img{
+  width: 100%;
+  height: 586px;
+}
+
+.contact .common-title h2{
+  text-align: left;
+  width: auto;
+  padding: 11px 0 30px;
+}
+
+.contact .common-title{
+  padding-top: 60px;
+}
+
+.contact .common-title h4{
+  text-align: left;
+  margin-left: 60px;
+}
+
+.contact .common-title h4::after {
+  left: -57px;
+}
+
+.contact .common-title h4::before {
+  left: -17px;
+}
+
+.contact .box{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  padding-bottom: 50px;
+}
+
+.contact .box input{
+  width: 44%;
+  border: 0;
+  border-bottom: 1px solid #E5ECEC;
+  padding-bottom: 12px;
+  outline: 0;
+  font-family: "Jost", sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   color: rgb(0, 65, 61);
+}
+
+.contact .box input::placeholder{
+  font-family: "Jost", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   color: rgba(0, 65, 61, .7);
+}
+
+.contact .box .last-input{
+  width: 100%;
+}
+ /* =================================
+        Contact Part End
  ================================= */
