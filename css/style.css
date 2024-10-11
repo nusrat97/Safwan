@@ -780,7 +780,7 @@
    color: rgba(0, 65, 61, .7);
 }
 
-.contact .box .last-input{
+.contact .box input:last-child{
   width: 100%;
 }
  /* =================================
@@ -798,7 +798,7 @@
  }
  
  .blog .card{
-  margin: 40px 0 60px;
+  margin: 40px 0 120px;
   border: 0px;
   width: 100% !important;
   -webkit-box-shadow: 5px 5px 18px -2px rgba(224,221,224,1);
@@ -875,4 +875,78 @@
 }
  /* =================================
         Blog Part End
+ ================================= */
+ /* =================================
+        Footer Part Start
+ ================================= */
+ .footer{
+  background: #00413D;
+  padding: 90px 0 20px;
+  text-align: center;
+  position: relative;
+ }
+
+ .footer .textul{
+  display: flex;
+  padding: 60px 0 50px;
+  column-gap: 27px;
+  justify-content: center;
+ }
+
+ .footer .textul li{
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFF;
+  padding-right: 33px;
+  border-right: 3px solid #195450;
+ }
+
+ .footer .textul li:last-child{
+  padding: 0;
+  border: 0;
+ }
+
+ .footer .iconul{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+ }
+
+ .footer .iconul li{
+  width: 60px;
+  height: 60px;
+  background: #E5745D;
+  border-radius: 50%;
+  line-height: 70px;
+ }
+
+ .footer .iconul li i{
+  color: #FFF;
+  font-size: 34px;
+ }
+
+ .footer .iconul li i:last-child{
+  font-size: 30px;
+ }
+
+ .footer p{
+  padding-top: 150px;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #A6B9B8;
+ }
+
+ .footer .line{
+  height: 1px;
+  width: 1500px;
+  background: #195450;
+  position: absolute;
+  bottom: 86px;
+  left: 50%;
+  transform: translateX(-50%);
+ }
+ /* =================================
+        Footer Part End
  ================================= */
